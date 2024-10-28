@@ -2,11 +2,9 @@ import mongoose from 'mongoose';
 
 const connectDB = async () => {
     mongoose
-        .connect(`${process.env.URI}`) 
-        .then(() => console.log('Connected to MongoDB')) 
+        .connect('mongodb://localhost:27017/Explorer')
+        .then(() => console.log('Connected to MongoDB'))
         .catch((error) => console.log(error)); 
 };
 
-connectDB()
-
-export default mongoose;
+export default connectDB;
