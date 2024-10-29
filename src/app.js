@@ -2,6 +2,7 @@ import express from 'express';
 import connectDB from './config/db.js'
 import expeditionRouter from './routers/expeditionRouter.js';
 import explorerRouter from './routers/explorerRouter.js';
+import speciesRouter from './routers/speciesRouter.js';
 
 connectDB();
 
